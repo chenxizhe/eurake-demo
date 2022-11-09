@@ -15,6 +15,7 @@ public class StudentHandler {
     private StudentRepository studentRepository;
     @Value("${server.port}")
     private String port;
+
     @GetMapping("/findAll")
     public Collection findAll(){
         return studentRepository.findAll();
